@@ -2,7 +2,7 @@ import BeszeljVelemAsideLink from './beszelj-velem-aside-link';
 
 export default function BeszeljVelemAside() {
   return (
-    <nav className="p-4 sm:p-0">
+    <nav className="px-4 sm:px-0">
       <ul>
         <li>
           <BeszeljVelemAsideLink href="/beszelj-velem">
@@ -31,15 +31,15 @@ export default function BeszeljVelemAside() {
       </ul>
 
       <hr className="border-pink-900 my-2" />
-      <span className="block my-4 text-lg font-semibold">Terápiák</span>
+      {/* <span className="block my-4 text-lg font-semibold">Terápiák</span> */}
 
       <ul>
         <li>
-          <BeszeljVelemAsideLink href="/beszelj-velem/terapiak#lovas-terapia">
-            Lovas terápia
+          <BeszeljVelemAsideLink href="/beszelj-velem/terapiak">
+            Terápiák
           </BeszeljVelemAsideLink>
         </li>
-        <li>
+        {/* <li>
           <BeszeljVelemAsideLink href="/beszelj-velem/terapiak#kutyaterapia">
             Kutyaterápia
           </BeszeljVelemAsideLink>
@@ -78,7 +78,6 @@ export default function BeszeljVelemAside() {
           <BeszeljVelemAsideLink href="/beszelj-velem/terapiak#diszfonia">
             Diszfónia
           </BeszeljVelemAsideLink>
-          {/* ---------- utolso --------------- */}
         </li>
         <li>
           <BeszeljVelemAsideLink href="/beszelj-velem/terapiak#sindelar-fejlesztes">
@@ -109,7 +108,7 @@ export default function BeszeljVelemAside() {
           <BeszeljVelemAsideLink href="/beszelj-velem/terapiak#egyeni-komplex-gyogypedagogia">
             Egyéni komplex gyógypedagógia
           </BeszeljVelemAsideLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

@@ -45,7 +45,7 @@ export default function NemetNemzetisegiCsoportPage() {
         <p>Ismertető videónk a német nemezetiségi csoportról:</p>
       </article>
 
-      <div className="mt-4 relative aspect-video">
+      <div className="mt-4 relative aspect-video mb-12">
         <iframe
           className="absolute w-full h-full"
           width="560"

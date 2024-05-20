@@ -31,7 +31,8 @@ export default function RootLayout({ children }) {
         <div className="bg-lime-700 border-b border-lime-900">
           <div className="py-4 prose prose-lg prose-stone prose-invert max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-center">
-              Nyári tábor 2024! Regisztráció <Link href="#">itt</Link>!
+              Nyári tábor 2024! Regisztráció{' '}
+              <Link href="/nyari-tabor">itt</Link>!
             </p>
           </div>
         </div>
@@ -114,7 +115,7 @@ export default function RootLayout({ children }) {
         </header>
         {children}
         <footer className="bg-neutral-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="flex flex-col gap-4 prose prose-sm lg prose-stone prose-invert">
               <Link href="#">Adatvédelem</Link>
               <Link href="#">Süti tájékoztató</Link>

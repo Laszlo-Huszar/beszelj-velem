@@ -5,14 +5,18 @@ import {
   PopoverPanel,
 } from '@headlessui/react';
 import BeszeljVelemAside from './beszelj-velem-aside';
+import { Bars3CenterLeftIcon } from '@heroicons/react/24/outline';
 
 export default function BeszeljVelemLayout({ children }) {
   return (
-    <div className="bg-pink-950">
-      <Popover className="relative sm:hidden">
-        <PopoverButton>S</PopoverButton>
+    <div className="bg-pink-950 min-h-screen">
+      <Popover className="sticky top-16 sm:hidden bg-stone-900 px-4 sm:px-6 lg:px-8 flex items-center py-2">
+        <PopoverButton className="flex items-center gap-4">
+          <Bars3CenterLeftIcon className="w-6 h-6" />
+          Beszélj Velem Óvoda menü
+        </PopoverButton>
         <PopoverOverlay className="fixed inset-0 bg-black/85" />
-        <PopoverPanel className="absolute top-0 bg-white w-full">
+        <PopoverPanel className="absolute left-0 top-0 bg-stone-900/90 w-full">
           <BeszeljVelemAside />
         </PopoverPanel>
       </Popover>

@@ -12,7 +12,7 @@ export default function NyariTaborPage() {
   };
 
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-screen">
       <article className="prose prose-stone prose-invert">
         <h2>Nyári tábor 2024</h2>
         <p>Nyári Tematikus Táboraink július 01-tól augusztus 16-ig</p>

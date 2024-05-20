@@ -4,7 +4,7 @@ import PrimaryButton from '../components/PrimaryButton';
 
 export default function KapcsolatPage() {
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-screen">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
         <div className="grow py-12 space-y-8 prose prose-stone prose-invert">
           <address>

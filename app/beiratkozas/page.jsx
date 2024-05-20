@@ -3,7 +3,7 @@ import drKoppMiklosnePhoto from '../images/drkoppmiklosne.jpg';
 
 export default function BeiratkozasPage() {
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-screen">
       <article className="prose prose-stone prose-invert">
         <h2>Beiratkozás</h2>
         <h3>Kedves érdeklődő szülők, és nagyszülők</h3>

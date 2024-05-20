@@ -106,6 +106,11 @@ export default function RootLayout({ children }) {
                           Kapcsolat
                         </MobileMenuLink>
                       </li>
+                      <li>
+                        <MobileMenuLink href="/nyari-tabor">
+                          Nyári tábor 2024
+                        </MobileMenuLink>
+                      </li>
                     </ul>
                   </nav>
                 </PopoverPanel>

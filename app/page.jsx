@@ -8,7 +8,7 @@ const deliusUnicase = Delius_Unicase({ subsets: ['latin'], weight: '400' });
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen">
       <div className="relative w-full h-[700px]">
         <Image className="object-cover" src={heroImage} fill />
         <div className="absolute inset-x-0 bottom-0 bg-orange-800/70">

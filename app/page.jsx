@@ -14,6 +14,7 @@ const deliusUnicase = Delius_Unicase({ subsets: ['latin'], weight: '400' });
 import heroImage from '../public/csoport.jpg';
 import jatszoterImage from '../public/kipp-kopp-jatszoter.jpg';
 import teremImage from '../public/terem.jpg';
+import PrimaryLink from './components/primary-link';
 
 export default function Home() {
   return (
@@ -91,6 +92,9 @@ export default function Home() {
                   szakköröket kínálunk az óvodai mindennapokba integrálva:
                   lovaglás, úszás – vízi torna, sakk, bélyegszakkör.
                 </p>
+                <div className="flex justify-end">
+                  <Link href="/kipp-kopp">Tovább a Kipp-Kopp Óvodához</Link>
+                </div>
               </section>
             </div>
             <div className="rounded-lg overflow-hidden mx-auto bg-pink-200 dark:bg-pink-950 border border-gray-300 dark:border-gray-800">
@@ -98,15 +102,20 @@ export default function Home() {
                 <Image className="object-cover" src={teremImage} fill />
               </div>
 
-              <section className="p-6 prose prose-gray dark:prose-invert">
+              <section className="flex flex-col p-6 prose prose-gray dark:prose-invert">
                 <h3>Beszélj Velem Óvoda</h3>
-                <p>
+                <p className="grow">
                   Közel 30 éve működik a Beszélj Velem Fejlesztő Óvoda. Befogadó
                   intézménye tipikus és sajátos nevelési igényű kicsi
                   gyerekeknek. Különleges és egyedi köznevelési intézmény a
                   családok szolgálatában. A legfiatalabb korosztály nevelését,
                   fejlesztését tűzte ki célul.
                 </p>
+                <div className="flex justify-end">
+                  <Link href="/beszelj-velem">
+                    Tovább a Beszélj Velem Óvodához
+                  </Link>
+                </div>
               </section>
             </div>
           </div>

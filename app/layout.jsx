@@ -2,7 +2,6 @@ import { Inter } from 'next/font/google';
 import { Delius_Unicase } from 'next/font/google';
 import './globals.css';
 import Image from 'next/image';
-import kippKoppLogo from './images/kipp-kopp-ovoda-logo-300x300.jpg';
 import Link from 'next/link';
 import {
   CloseButton,
@@ -12,10 +11,15 @@ import {
   PopoverPanel,
 } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import MobileMenuLink from './mobile-menu-link';
+import MainNav from './main-nav';
 
 const inter = Inter({ subsets: ['latin'] });
 const concertOne = Delius_Unicase({ subsets: ['latin'], weight: '400' });
+
+// nem latja a lighthouse
+export const viewport = {
+  themeColor: '#0c0a09',
+};
 
 export const metadata = {
   title: 'Beszélj velem óvoda',
@@ -37,7 +41,9 @@ export default function RootLayout({ children }) {
           </div>
         </div>
 
-        <header className={`sticky top-0 inset-x-0 bg-lime-800 h-16 z-40`}>
+        <MainNav />
+
+        {/* <header className={`sticky top-0 inset-x-0 bg-lime-800 h-16 z-40`}>
           <div className="flex items-center gap-4 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div>
               <Link className="flex items-center" href="/">
@@ -117,7 +123,7 @@ export default function RootLayout({ children }) {
               </Popover>
             </div>
           </div>
-        </header>
+        </header> */}
         {children}
         <footer className="bg-neutral-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
